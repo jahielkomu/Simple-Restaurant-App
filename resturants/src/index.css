@@ -41,7 +41,7 @@ header a {
     grid-template-columns: 3fr 1fr;
     gap: 100px;
   }
-  .resturant-details {
+  .restaurant-details {
     background: #fff;
     border-radius: 4px;
     margin: 20px auto;
@@ -49,17 +49,26 @@ header a {
     position: relative;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
   }
-  .resturant-details h4 {
+  .restaurant-details h4 {
     margin: 0 0 10px 0;
     font-size: 1.2em;
     color: var(--primary);
   }
-  .resturant-details p {
+  .restaurant-details p {
     margin: 0;
     font-size: 0.9em;
     color: #555;
   }
-  .resturant-details span {
+  /* .restaurant-details img {
+    position: absolute;
+    top: 20px;
+    right: 400px;
+    align-items: center;
+    padding: 10px;
+   
+
+  } */
+  .restaurant-details span {
     position: absolute;
     top: 20px;
     right: 20px;
@@ -70,7 +79,7 @@ header a {
     color: #333;
   }
 
-  /* new resturant form */
+  /* new restaurant form */
 label, input {
     display: block;
   }
@@ -104,3 +113,5 @@ label, input {
   input.error {
     border: 1px solid var(--error);
   }
+
+  

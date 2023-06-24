@@ -18,13 +18,17 @@
 
     "@testing-library/jest-dom": "^5.16.5",
 
-    "@testing-library/react": "^13.4.0",
-
     "@testing-library/user-event": "^13.5.0",
+
+    "bootstrap": "^5.1.3",
 
     "date-fns": "^2.30.0",
 
+    "dropify": "^0.2.2",
+
     "react": "^18.2.0",
+
+    "react-bootstrap": "^2.7.4",
 
     "react-dom": "^18.2.0",
 
@@ -81,6 +85,14 @@
       "last 1 safari version"
 
     ]
+
+  },
+
+  "devDependencies": {
+
+    "@testing-library/react": "^14.0.0",
+
+    "react-test-renderer": "^18.2.0"
 
   }
 

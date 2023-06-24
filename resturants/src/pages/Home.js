@@ -1,34 +1,34 @@
 import { useEffect} from "react"
-import { useResturantsContext } from "../hooks/useResturantContext"
+import { useRestaurantsContext } from "../hooks/useRestaurantContext"
 
-import ResturantDetails from "../components/ResturantDetails"
-import ResturantForm from "../components/ResturantForm"
+import RestaurantDetails from "../components/RestaurantDetails"
+import RestaurantForm from "../components/RestaurantForm"
 
 
 const Home = () => {
-  const {resturants, dispatch } = useResturantsContext()
+  const {restaurants, dispatch } = useRestaurantsContext()
 
   useEffect(() => {
-    const fetchResturants = async () => {
-      const response = await fetch('/api/resturants')
+    const fetchRestaurants = async () => {
+      const response = await fetch('/api/restaurants')
       const json = await response.json()
 
       if (response.ok) {
-        dispatch({type: 'SET_RESTURANTS', payload: json})
+        dispatch({type: 'SET_RESTAURANTS', payload: json})
       }
     }
 
-    fetchResturants()
+    fetchRestaurants()
   }, [dispatch])
 
   return (
     <div className="home">
-      <div className="resturants">
-        {resturants && resturants.map(resturant => (
-          <ResturantDetails resturant={resturant} key={resturant._id} />
+      <div className="restaurants">
+        {restaurants && restaurants.map(restaurant => (
+          <RestaurantDetails restaurant={restaurant} key={restaurant._id} />
         ))}
       </div>
-      <ResturantForm />
+      <RestaurantForm />
     </div>
   )
 }
